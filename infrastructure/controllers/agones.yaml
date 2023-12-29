@@ -32,17 +32,17 @@ spec:
         name: agones
         namespace: agones
       interval: 12h
-values:
-  agones:
-    allocator:
-      install: true
-      service:
-        serviceType: ClusterIP
-    ping:
-      http:
-        serviceType: ClusterIP
-      udp:
-        serviceType: ClusterIP
+  values:
+    agones:
+      allocator:
+        install: true
+        service:
+          serviceType: ClusterIP
+      ping:
+        http:
+          serviceType: ClusterIP
+        udp:
+          serviceType: ClusterIP
   # gameservers:
   #   namespaces:
   #     - shulker-system
